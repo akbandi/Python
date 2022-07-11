@@ -45,7 +45,7 @@ with open(csvpath) as csvfile:
 
 #calculating the net profit loss and average profit change
 net_profit_loss = sum(month_profit_change)
-average_profit_changes = (net_profit_loss/row_count)
+average_profit_changes = (net_profit_loss/(row_count-1))
 
 # greatest increase and decrease along with the months
 greatest_profit_increase = max(month_profit_change)
